@@ -25,11 +25,11 @@ const Header = () => {
                 </nav>
 
                 <div className="flex gap-4">
-                    <Button variant={"outline"} size={"icon"}>
+                    <Button variant={"ghost"} size={"icon"}>
                         <UserCircle size={18} />
                     </Button>
 
-                    <Button variant={"outline"} size={"icon"}>
+                    <Button variant={"ghost"} size={"icon"}>
                         <ShoppingCart size={18} />
                     </Button>
                 </div>
