@@ -1,10 +1,16 @@
-import React from 'react'
+import { Card, CardContent } from "@/app/_components/ui/card"
+
+import products from "@/app/data/products"
+
 
 const OffersItem = () => {
   return (
-    <div>
-      <h2>OFERTAS</h2>
-    </div>
+    <Card>
+      <CardContent className="p-0">
+        <h1>{products[0].title}</h1>
+        <p>R$ {products[0].newPrice}</p>
+      </CardContent>
+    </Card>
   )
 }
 

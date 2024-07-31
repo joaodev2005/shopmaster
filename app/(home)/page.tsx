@@ -27,24 +27,29 @@ export default function Home() {
     <div>
       <Header />
 
-      <Banner />
+      <div className="px-5 py-8 sm:px-0 sm:py-0">
+        <Banner />
+      </div>
 
       <div className="max-w-[1700px] mx-auto px-5 py-8">
 
-        <div className="flex gap-4 mb-8">
-
+        <div className="grid gap-4 mb-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6">
           {products.map((product) => (
-            <Button variant="outline" className="w-64" key={product.name}>
+            <Button variant="outline" className="w-full" key={product.name}>
               <div className="flex items-center gap-4">
                 {product.icon}
                 <span>{product.name}</span>
               </div>
             </Button>
           ))}
-
         </div>
 
-        <OffersItem />
+        <div className="space-y-4">
+          <h2>OFERTAS</h2>
+
+          <OffersItem />
+
+        </div>
 
       </div>
 
