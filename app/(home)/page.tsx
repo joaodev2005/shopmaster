@@ -33,9 +33,20 @@ export default function Home() {
 
       <div className="max-w-[1700px] mx-auto px-5 py-8">
 
-        <div className="grid gap-4 mb-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6">
+        {/* <div className="grid gap-4 mb-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6">
           {products.map((product) => (
             <Button variant="outline" className="w-full" key={product.name}>
+              <div className="flex items-center gap-4">
+                {product.icon}
+                <span>{product.name}</span>
+              </div>
+            </Button>
+          ))}
+        </div> */}
+
+        <div className="grid gap-4 mb-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+          {products.map((product) => (
+            <Button variant="outline" className="w-full text-sm md:text-base lg:text-lg" key={product.name}>
               <div className="flex items-center gap-4">
                 {product.icon}
                 <span>{product.name}</span>
