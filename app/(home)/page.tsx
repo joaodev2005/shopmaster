@@ -58,7 +58,9 @@ export default function Home() {
         <div className="space-y-4">
           <h2>OFERTAS</h2>
 
-          <OffersItem />
+          <div className="flex gap-4 overflow-x-auto">
+            <OffersItem />
+          </div>
 
         </div>
 
