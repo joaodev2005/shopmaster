@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -71,6 +71,9 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(270deg, #36393C 0%, #36393C 0.01%, rgba(54, 57, 60, 0.4) 100%)',
       },
     },
   },

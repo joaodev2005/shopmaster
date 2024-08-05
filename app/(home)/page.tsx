@@ -1,6 +1,7 @@
 import Header from "../_components/header";
 import Banner from "../../app/(home)/_components/Banner";
 import OffersItem from "./_components/OffersItem";
+import OffersBanner from "./_components/OffersBanner";
 
 import { Button } from "../_components/ui/button";
 
@@ -62,6 +63,10 @@ export default function Home() {
             <OffersItem />
           </div>
 
+        </div>
+
+        <div className="mt-6">
+          <OffersBanner />
         </div>
 
       </div>
