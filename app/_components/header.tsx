@@ -17,16 +17,14 @@ const Header = () => {
         <Card>
             <CardContent className="bg-[#0B0B0B] flex justify-between items-center px-5 py-8">
 
-                <Sheet>
-                    <SheetTrigger>
-                        <div className="sm:hidden">
-                            <Button variant={"ghost"} size={"icon"}>
-                                <MenuIcon size={18} />
-                            </Button>
-                        </div>
+                 <Sheet>
+                    <SheetTrigger asChild>
+                        <Button variant="ghost" className="lg:hidden">
+                            <MenuIcon size={18} />
+                        </Button>
                     </SheetTrigger>
 
-                    <SheetContent side={"left"}>
+                    <SheetContent side={"left"} className="w-64 max-w-full overflow-auto">
                         <SideMenu />
                     </SheetContent>
                 </Sheet>
@@ -73,7 +71,6 @@ const Header = () => {
                             <SideCart />
                         </SheetContent>
                     </Sheet>
-
 
                 </div>
 
