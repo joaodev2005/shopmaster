@@ -1,5 +1,9 @@
+import SideMenu from "@/app/_components/SideMenu"
+import SideCart from "@/app/_components/SideCart"
+
 import { Button } from "./ui/button"
 import { Card, CardContent } from "./ui/card"
+import { Sheet, SheetTrigger, SheetContent } from "./ui/sheet"
 
 import {
     ShoppingCart,
@@ -13,11 +17,19 @@ const Header = () => {
         <Card>
             <CardContent className="bg-[#0B0B0B] flex justify-between items-center px-5 py-8">
 
-                <div className="sm:hidden">
-                    <Button variant={"ghost"} size={"icon"}>
-                        <MenuIcon size={18} />
-                    </Button>
-                </div>
+                <Sheet>
+                    <SheetTrigger>
+                        <div className="sm:hidden">
+                            <Button variant={"ghost"} size={"icon"}>
+                                <MenuIcon size={18} />
+                            </Button>
+                        </div>
+                    </SheetTrigger>
+
+                    <SheetContent side={"left"}>
+                        <SideMenu />
+                    </SheetContent>
+                </Sheet>
 
                 <h2 className="text-xl font-bold">
                     <span className="text-primary">SHOP</span> MASTER
@@ -50,9 +62,19 @@ const Header = () => {
                         </Button>
                     </div>
 
-                    <Button variant={"ghost"} size={"icon"}>
-                        <ShoppingCart size={18} />
-                    </Button>
+                    <Sheet>
+                        <SheetTrigger>
+                            <Button variant={"ghost"} size={"icon"}>
+                                <ShoppingCart size={18} />
+                            </Button>
+                        </SheetTrigger>
+
+                        <SheetContent side={"right"}>
+                            <SideCart />
+                        </SheetContent>
+                    </Sheet>
+
+
                 </div>
 
             </CardContent>

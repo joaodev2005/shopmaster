@@ -65,7 +65,7 @@ export default function Home() {
 
         </div>
 
-        <div className="mt-6">
+        <div className="mt-6 flex justify-center lg:justify-start">
           <OffersBanner />
         </div>
 
