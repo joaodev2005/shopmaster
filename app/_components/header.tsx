@@ -17,7 +17,7 @@ const Header = () => {
         <Card>
             <CardContent className="bg-[#0B0B0B] flex justify-between items-center px-5 py-8">
 
-                 <Sheet>
+                <Sheet>
                     <SheetTrigger asChild>
                         <Button variant="ghost" className="lg:hidden">
                             <MenuIcon size={18} />
@@ -34,7 +34,7 @@ const Header = () => {
                 </h2>
 
                 <nav>
-                    <ul className="lg:flex hidden sm:flex items-center gap-4 text-white">
+                    <ul className="lg:flex hidden items-center gap-4 text-white">
                         <li><a href="#" className="hover:text-primary">Início</a></li>
                         <li className="text-white">|</li>
                         <li><a href="#" className="hover:text-primary">Catálogo</a></li>
@@ -42,7 +42,7 @@ const Header = () => {
                         <li><a href="#" className="hover:text-primary">Ofertas</a></li>
                     </ul>
                 </nav>
-
+                
                 {/* <div className="lg:flex gap-4 hidden sm:flex">
                     <Button variant={"ghost"} size={"icon"}>
                         <UserCircle size={18} />

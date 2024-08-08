@@ -1,6 +1,6 @@
 'use client'
 
-import { UserIcon, LogInIcon, HomeIcon } from 'lucide-react'
+import { UserIcon, LogInIcon, HomeIcon, TagIcon, Scroll } from 'lucide-react'
 import { Button } from './ui/button'
 import { SheetHeader } from "./ui/sheet"
 import Link from 'next/link'
@@ -26,11 +26,25 @@ const SideMenu = () => {
                 </Button>
             </div>
 
-            <div className='flex flex-col gap-3 px-5'>
+            <div className='flex flex-col gap-6 px-5'>
                 <Button variant="outline" className='justify-start' asChild>
                     <Link href='/'>
                         <HomeIcon className='mr-2' size={18} />
                         Inicio
+                    </Link>
+                </Button>
+
+                <Button variant="outline" className='justify-start' asChild>
+                    <Link href='/'>
+                        <Scroll className='mr-2' size={18} />
+                        Catalógo
+                    </Link>
+                </Button>
+
+                <Button variant="outline" className='justify-start' asChild>
+                    <Link href='/'>
+                        <TagIcon className='mr-2' size={18} />
+                        Ofertas
                     </Link>
                 </Button>
             </div>
